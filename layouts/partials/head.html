@@ -1,0 +1,13 @@
+<head>
+{{ printf "<!-- Hugo theme: 'bubblegasket', Original Author: danieljudd.xyz | github.com/danieljudd -->" | safeHTML }}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    {{ $title := print .Site.Title " | " .Title }}
+    {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+    <title>{{ $title }}</title>
+	
+	<!-- favicon -->	
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>{{.Site.Params.Icon}}</text></svg>">
+	<link rel="manifest" href="/site.webmanifest">
+</head>

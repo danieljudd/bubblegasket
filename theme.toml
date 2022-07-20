@@ -1,0 +1,11 @@
+name = "Bubblegasket"
+license = "GPL"
+licenselink = "https://github.com/danieljudd/bubblegasket/blob/main/LICENCE"
+description = "Bubblegasket is a GPL software theme for Hugo"
+homepage = "https://github.com/danieljudd/bubblegasket/"
+tags = ["gpl","blog","portfolio","bubblegasket","responsive","minimal","contact"]
+features = ["nobloat","mobile","accessible","lightweight","color","colour","under1mb"]
+min_version = "0.41.0"
+[author]
+  name = "Daniel Judd"
+  homepage = "https://danieljudd.xyz"

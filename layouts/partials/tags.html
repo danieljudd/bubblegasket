@@ -1,0 +1,10 @@
+<center><p>Tag cloud:</p></center>
+	{{ range $name, $taxonomy := $.Site.Taxonomies.tags }}
+	  {{ $tagCount := len $taxonomy.Pages }}
+		<a href="{{ "/tags/" | relURL }}{{ $name | urlize }}" 
+		class="tagcloud-item" >
+		  {{ $name }}<sup>{{ $tagCount }}</sup>
+		</a>
+	{{ end }}
+
+

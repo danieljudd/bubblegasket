@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    {{- partial "head.html" . -}}
+    <body>
+        {{- partial "header.html" . -}}
+        <div id="content">
+        {{- block "main" . }}{{- end }}
+        </div>
+		<br>
+		
+		{{if .Site.Params.Tags }}
+		<div id = "tags">
+		{{- partial "tags.html" . -}}
+		</div>
+		<br>
+		{{ end }}
+	
+		<div id = "socials">
+		{{- partial "socials.html" . -}}
+		</div>
+		<div id = "foot">
+        {{- partial "footer.html" . -}}
+		</div>
+    </body>
+</html>

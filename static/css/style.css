@@ -1,0 +1,128 @@
+
+/* separate nav a bit */
+nav :not(:last-child):after {
+	content: " -"
+}
+
+nav {
+	text-align: center;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	font-size: 1.3rem;
+}
+
+body {
+	max-width: 40rem;
+	margin: auto;
+	padding: 0.5rem;
+	background: linear-gradient(
+    to right, #124269 0%, #125559 100%);
+	color: white;
+	font-family: sans;
+}
+
+img {
+	max-width: 100%;
+}
+
+#content {
+	padding: 0.2rem;
+	background-color: #191919;
+	border-radius: 0.5em;
+	outline-style: outset;
+	outline-width: 4px;
+	outline-color: coral;
+	font-size: 1.1rem;
+}
+
+/* url colours, customizable */
+a {
+	text-decoration: none;
+}
+
+a:link {
+	color: #FFFF55;
+}
+
+a:visited {
+	color: #FFFF55;
+}
+
+nav a:hover {
+	outline-style: ridge;
+	border-radius: 0.05rem;
+	outline-width: 0.2rem;
+	background-color: #3B4675;
+	color: white;
+}
+
+#Section1, #Section2 {
+	background-color: #333;
+	border-radius: 0.2em;
+	outline-style: outset;
+	outline-width: 2px;
+	margin: 0.05rem;
+	max-width: 41rem;
+	text-transform: capitalize;
+}
+
+#Section1 h2, #Section2 h2 {
+	text-align: center;
+}
+
+h1 {
+	margin: auto;
+	text-align: center;
+	font-family: Sans-Serif;
+	font-weight: bold;
+	color: yellow;
+	text-decoration: underline;
+	text-decoration-thickness: 0.04em;
+	
+}
+
+code {
+	font-size: 0.65rem;
+	background-color: green;
+	white-space: normal;
+}
+
+#tags {
+	padding: 0.1rem;
+	background-color: black;
+	border-radius: 0.5rem;
+	outline-style: dotted;
+	outline-width: 1px;
+	outline-color: grey;
+	font-size: 0.8rem;
+	margin: auto;
+	font-family: sans-serif;
+	max-width: 25rem;
+}
+
+
+#tags a:nth-child(odd) {
+	background-color: #1C6754;
+	padding: 0.2em;
+	border-radius: 0.5rem;
+}
+
+#tags a:nth-child(even) {
+	background-color: #532945;
+	padding: 0.2em;
+	border-radius: 0.5rem;
+}
+
+#tags a:nth-child(3n) {
+	background-color: #115115;
+	padding: 0.2em;
+	border-radius: 0.5rem;
+}
+
+#foot, #socials {
+	text-align: center;
+}
+
+#socials img {
+	height: 1rem;
+}

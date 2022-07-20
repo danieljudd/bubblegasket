@@ -1,0 +1,7 @@
+{{ with .Site.Params.Email }}
+<a href="mailto:{{.}}">E-mail 📧 |</a>
+{{ end }}
+{{ with .Site.Params.Github }}
+<a href="{{.}}">Github <img src="/github.svg" alt="Github"> |</a>    
+{{ end }}
+<a href="{{.Site.RSSLink}}" target="_blank">Subscribe to RSS <img src="/rss.svg" alt="RSS"></a>
