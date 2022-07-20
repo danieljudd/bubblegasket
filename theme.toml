@@ -1,7 +1,7 @@
 name = "BubbleGasket"
 license = "GPL"
-licenselink = "https://github.com/danieljudd/bubblegasket/blob/main/LICENCE"
-description = "Bubblegasket is a GPL software theme for Hugo"
+licenselink = "https://github.com/danieljudd/bubblegasket/blob/main/LICENSE"
+description = "BubbleGasket is a GPL software theme for Hugo"
 homepage = "https://github.com/danieljudd/bubblegasket/"
 tags = ["gpl","blog","portfolio","bubblegasket","responsive","minimal","contact"]
 features = ["nobloat","mobile","accessible","lightweight","color","colour","under1mb"]
