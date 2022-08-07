@@ -14,6 +14,13 @@
 		</div>
 		<br>
 		{{ end }}
+		
+		{{if .Site.Params.Archive }}
+		<div id = "archive">
+		{{- partial "archive.html" . -}}
+		</div>
+		<br>
+		{{ end }}
 	
 		<div id = "socials">
 		{{- partial "socials.html" . -}}

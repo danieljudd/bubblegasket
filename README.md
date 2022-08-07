@@ -2,11 +2,11 @@
 
 https://github.com/danieljudd/bubblegasket
 
-Features:
+## Features:
 - No Javascript
 - Lightweight
-- No tracking
-- Customizable
+- No tracking options
+- Customizable via CSS and config.toml
 
 Responsive page for browsers
 ![/images/preview1.jpg](/images/preview1.jpg)
@@ -14,6 +14,19 @@ Responsive page for browsers
 Easy to read
 ![/images/preview2.jpg](/images/preview2.jpg)
 
+---
+### Changelog
+
+* Added archive page, changed CSS and config option
+* Initial release on Github
+
+---
+### To do
+- Better favicon options (choice of emoji or image)
+- More themes in the form of CSS files
+- Pick a good default font
+- Tags and Archive should fit in better
+- Cleaner or more readable CSS
 
 ---
 
@@ -25,14 +38,12 @@ Easy to read
 	
 2. Place **bubblegasket** folder and its contents in MyWebsiteFolder/themes/
 
-Using Git while at MyWebsiteFolder/themes/ :
+		git clone https://github.com/danieljudd/bubblegasket.git
 
-	git clone https://github.com/danieljudd/bubblegasket.git
+3. Add line **theme = 'bubblegasket'** to root file (MyWebsiteFolder/config.toml) or copy config below
 
-3. Add line **theme = 'bubblegasket'** to root file config.toml or use config below
-
-## Configuration example (config.toml)
-### Create your own 'content' folders under *yoursite.com* /content/EXAMPLEFOLDER
+## Configuration example (and config.toml)
+### Website requires you to create your own 'content' folders under *yoursite.com* /content/EXAMPLEFOLDER
 **...use any appropriate name and assign them under the config.toml**
 **These will then appear under your website's navigation and point to your created folder.**
 
@@ -50,7 +61,9 @@ Using Git while at MyWebsiteFolder/themes/ :
 		Footer = 'example.com'
 		Github = 'https://github.com/github'
 		# Turn on or off tag cloud (true is on or false off)
-		Tags = true
+		Tags = false
+		# Turn on or off archive (true is on or false off)
+		Archive = false
 		# Emoji icons: https://emojipedia.org
 		Icon = '☂️'
 		numPosts = '3'
@@ -73,31 +86,16 @@ Using Git while at MyWebsiteFolder/themes/ :
 			name = "📭 Donate"
 			url = "/donate"
 			weight = 4
+		
 
-## Other customization options
+1. Create hugo posts and (optionally) use tags
+		hugo new blog/mypost.md
+		
+For tags (Tags = true), edit the file and add this line in header of mypost.md:
 
-Go to bubblegasket\static\css\style.css
+		tags = [changeme,topic,blog,category,etc]
 
-Edit lines to change colour options e.g.,
-
-	background: linear-gradient(
-    to right, #124269 0%, #125559 100%);
-	
-	background-color: #191919;
-	
-	outline-color: coral;
-	
-	a:link {
-		color: #FFFF55;
-	}
-
-	a:visited {
-		color: #FFFF55;
-	}
-	
-etc..
-
-Change many options by searching for keywords "color" and "font-size" and "font-family"
+2. Customize CSS options by searching for keywords "color" and "font-size" and "font-family"
 
 ## Example website
 ![/images/preview3.jpg](/images/preview3.jpg)

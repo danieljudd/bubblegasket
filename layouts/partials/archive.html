@@ -1,0 +1,12 @@
+<center><h3>Archive:</h3></center>
+	{{ range $archive := $.Site.RegularPages }}
+	{{ $wordcount := $archive.WordCount }}
+	{{ $sec := $archive.Section }}
+	{{ .Date | dateFormat "2006 January 2"}} 
+		<a href="{{ .Permalink}}">
+		     {{ $archive.Title }} (Words: {{  $wordcount }}) 
+		</a>
+		<small>/{{ $sec }}/ </small><br>
+	{{ end }}
+<br>
+

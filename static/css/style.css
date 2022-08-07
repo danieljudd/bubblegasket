@@ -87,7 +87,7 @@ code {
 	white-space: normal;
 }
 
-#tags {
+#tags, #archive {
 	padding: 0.1rem;
 	background-color: black;
 	border-radius: 0.5rem;
@@ -97,9 +97,8 @@ code {
 	font-size: 0.8rem;
 	margin: auto;
 	font-family: sans-serif;
-	max-width: 25rem;
+	max-width: inherit;
 }
-
 
 #tags a:nth-child(odd) {
 	background-color: #1C6754;
