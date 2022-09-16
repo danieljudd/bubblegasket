@@ -1,11 +1,12 @@
-# BubbleGasket theme for Hugo
+# BubbleGasket theme for Hugo (Hugo.io)
 
 https://github.com/danieljudd/bubblegasket
 
 ## Features:
 - No Javascript
-- Lightweight
-- No tracking options
+- Lightweight (around 7.5KB for main page)
+- No tracking or 3rd party dependencies
+- Works on a static web server
 - Customizable via CSS and config.toml
 
 Responsive page for browsers
@@ -17,6 +18,7 @@ Easy to read
 ---
 ### Changelog
 
+* Started v2 + archived v1
 * Added archive page, changed CSS and config option
 * Initial release on Github
 
@@ -24,8 +26,8 @@ Easy to read
 ### To do
 - Better favicon options (choice of emoji or image)
 - More themes in the form of CSS files
-- Pick a good default font
-- Tags and Archive should fit in better
+- ~~Pick a good default font~~
+- ~~Tags and Archive should fit in better~~
 - Cleaner or more readable CSS
 
 ---
