@@ -20,10 +20,10 @@ Easy to read
 
 2.1
 (Nov 1st 2022)
-Date is right side of page now
-Font and line spacing changes
-No more lists on main page
-Headers more consistent (h1) and left justified (i.e., default)
+* Date is right side of page now
+* Font and line spacing changes
+* No more lists on main page
+* Headers more consistent (h1) and left justified (i.e., default)
 
 2.0
 * Started v2 + archived v1
