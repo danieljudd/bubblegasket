@@ -1,7 +1,7 @@
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
-<center>Posted:
-{{ partial "metadata.html" . }}</center>
-<br>
+Posted:
+{{ partial "metadata.html" . }}
+<hr>
 {{ .Content }}
 {{ end }}

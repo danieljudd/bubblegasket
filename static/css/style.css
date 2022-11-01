@@ -25,13 +25,16 @@ img {
 }
 
 #content {
-	padding: 0.2rem;
+	padding: 1em;
+	padding-top:  0.2em;
 	background-color: white;
 	border-radius: 0.1em;
 	outline-style: double;
 	outline-width: 4px;
 	outline-color: navy;
+	font-size: 16px;
 	font-family: Georgia;
+	line-height: 1.5;
 }
 
 /* url colours, customizable */
@@ -62,18 +65,9 @@ nav a:hover {
 /*	text-transform: capitalize; */
 }
 
-h2, h1 {
-	text-align: center;
-}
-
-#title {
-	font-family: "Lucida Console", "Courier New", monospace;
-	font-size: 1.1rem;
-	margin: auto;
-	text-align: center;
+h1 {
+	font-family: Arial;
 	font-weight: bold;
-	color: navy;
-	text-decoration-thickness: 0.04em;
 }
 
 code {
@@ -82,6 +76,10 @@ code {
 	border-radius: 0.2em;
 	color: black;
 	padding: 0.2em;
+}
+
+#date {
+	float:  right;
 }
 
 #tags, #archive {

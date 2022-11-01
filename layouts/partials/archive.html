@@ -2,7 +2,7 @@
 	{{ range $archive := $.Site.RegularPages }}
 	{{ $wordcount := $archive.WordCount }}
 	{{ $sec := $archive.Section }}
-	{{ .Date | dateFormat "2006 January 2"}} 
+	{{ .Date | dateFormat "2006 January 2"}} -
 		<a href="{{ .Permalink}}">
 		     {{ $archive.Title }} (Words: {{  $wordcount }}) 
 		</a>
